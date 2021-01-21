@@ -23,7 +23,7 @@
   - <img src="https://latex.codecogs.com/gif.latex?a_t=\text{score}(s_t,h_i)" />
   - ![image info](https://wikidocs.net/images/page/22893/i%EB%B2%88%EC%A7%B8%EC%96%B4%ED%85%90%EC%85%98%EC%8A%A4%EC%BD%94%EC%96%B4_final.PNG)
 - Attention score의 모음값 
-  - <img src="https://latex.codecogs.com/gif.latex?e^t=[s_t^T h_1,...,s_t^T h_N]" />
+  - <img src="https://latex.codecogs.com/gif.latex?e^t=[s_t^Th_1,...,s_t^Th_N]" />
 2) Attention Distribution (by Softmax function)
 ![image info](https://wikidocs.net/images/page/22893/dotproductattention3_final.PNG)
 - Attention Distribution : Attention score 의 모음값에 softmax 함수를 적용하여 얻어낸 확률 분포 (각각의 값 = Attention weight)
