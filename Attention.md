@@ -20,4 +20,15 @@
 - s_t : decoder의 t 시점의 hidden state 
 - a_t : t번째 단어를 예측하기 위한 attention score 
   - Decoder의 시점 t 에서 단어를 예측하기 위해, encoder의 모든 hidden state 각각이 decoder의 현 시점의 hidden state s_t와 얼마나 유사한지 판단하는 score 
-  - a_t = score(s_t, h_i) = dot(s_t, h_i)
+  - <img src="https://latex.codecogs.com/gif.latex?a_t=\text{score}(s_t,h_i)" />
+  - ![image info](https://wikidocs.net/images/page/22893/i%EB%B2%88%EC%A7%B8%EC%96%B4%ED%85%90%EC%85%98%EC%8A%A4%EC%BD%94%EC%96%B4_final.PNG)
+- Attention score의 모음값 
+  - <img src="https://latex.codecogs.com/gif.latex?e^t=[s_t^T h_1,...,s_t^T h_N]" />
+2) Attention Distribution (by Softmax function)
+![image info](https://wikidocs.net/images/page/22893/dotproductattention3_final.PNG)
+- Attention Distribution : Attention score 의 모음값에 softmax 함수를 적용하여 얻어낸 확률 분포 (각각의 값 = Attention weight)
+  - <img src="https://latex.codecogs.com/gif.latex?\alpha^t = softmax(e^t)" />
+3) Attention Value 
+![image info](https://wikidocs.net/images/page/22893/dotproductattention4_final.PNG)
+- 각 encoder의 hidden state와 Attention weights 들을 곱하고 모두 더함 (weighted sum) => Attention Value
+  - <img src="https://latex.codecogs.com/gif.latex?a_{t}=\sum_{i=1}^N \alpha_i^t h_i" />
