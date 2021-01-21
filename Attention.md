@@ -16,9 +16,9 @@
 ## Dot-Product Attention
 1) Attention Score 
 ![image info](https://wikidocs.net/images/page/22893/dotproductattention1_final.PNG)
-- h_N : encoder의 N 시점의 hidden state
-- s_t : decoder의 t 시점의 hidden state 
-- a_t : t번째 단어를 예측하기 위한 attention score 
+- <img src="https://latex.codecogs.com/gif.latex?h_N" /> : encoder의 N 시점의 hidden state
+- <img src="https://latex.codecogs.com/gif.latex?s_t" /> : decoder의 t 시점의 hidden state 
+- <img src="https://latex.codecogs.com/gif.latex?a_t" /> : t번째 단어를 예측하기 위한 attention score 
   - Decoder의 시점 t 에서 단어를 예측하기 위해, encoder의 모든 hidden state 각각이 decoder의 현 시점의 hidden state s_t와 얼마나 유사한지 판단하는 score 
   - <img src="https://latex.codecogs.com/gif.latex?a_t=\text{score}(s_t,h_i)" />
   - ![image info](https://wikidocs.net/images/page/22893/i%EB%B2%88%EC%A7%B8%EC%96%B4%ED%85%90%EC%85%98%EC%8A%A4%EC%BD%94%EC%96%B4_final.PNG)
